@@ -10,9 +10,13 @@ target 'Fobb' do
   pod 'FirebaseAuth'
   pod 'FirebaseDatabase'
   
+  pod "SmartcarAuth"
+  
   pod 'GoogleSignIn'
   
   pod 'ProgressHUD'
+  
+  pod 'Alamofire'
 
   target 'FobbTests' do
     inherit! :search_paths

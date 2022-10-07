@@ -9,11 +9,14 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 import GoogleSignIn
+import SmartcarAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    
+    var smartcar: SmartcarAuth?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

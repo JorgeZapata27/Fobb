@@ -9,34 +9,42 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
+import Alamofire
+import SmartcarAuth
+
 class ViewController: UIViewController {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var vehicleText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // TODO: Authorization Step 1: Initialize the Smartcar object
+        
+        appDelegate.smartcar = SmartcarAuth(clientId: Constants.clientId, redirectUri: "sc\(Constants.clientId)://exchange", scope: ["required:read_vehicle_info"], completionHandler: { err, code, state in
+            <#code#>
+        })
+        
+        // display a button
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 250, height: 50))
+        button.addTarget(self, action: #selector(connectPressed), for: .touchUpInside)
+        button.setTitle("Connect your vehicle", for: .normal)
+        button.backgroundColor = UIColor.black
+        self.view.addSubview(button)
+        
         view.backgroundColor = UIColor(named: "Background")
         
-        let button = UIButton(type: .system)
-        button.setTitle("Sign Out", for: [])
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(signOut), for: .touchUpInside)
+        let myButton = UIButton(type: .system)
+        myButton.setTitle("Sign Out", for: [])
+        myButton.translatesAutoresizingMaskIntoConstraints = false
+        myButton.addTarget(self, action: #selector(signOut), for: .touchUpInside)
         
-        view.addSubview(button)
-        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
-        let myLabel = UILabel()
-        myLabel.textAlignment = .center
-        myLabel.text = "Hello".localized()
-        myLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(myLabel)
-        myLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        myLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        myLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        myLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -200).isActive = true
+        view.addSubview(myButton)
+        myButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        myButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        myButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        myButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         if let uid = Auth.auth().currentUser?.uid {
             Database.database().reference().child("Users").child(uid).child("name").observeSingleEvent(of: .value) { snapshot in
@@ -61,6 +69,28 @@ class ViewController: UIViewController {
         catch { print("already logged out") }
         
         dismiss(animated: true)
+    }
+    
+    @objc func connectPressed() {
+        let smartcar = appDelegate.smartcar!
+        smartcar.launchAuthFlow(url: url, viewController: self)
+    }
+    
+    
+    
+    
+    
+    // smartcar tutorial stuff
+    
+    
+    func completion(err: Error?, code: String?, state: String?) -> Any {
+        // TODO: Authorization Step 3b: Receive an authorization code
+        
+        // TODO: Request Step 1: Obtain an access token
+        
+        // TODO: Request Step 2: Get vehicle information
+        
+        return ""
     }
     
     

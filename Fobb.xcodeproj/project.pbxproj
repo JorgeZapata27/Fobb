@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		78BA1DCB28F08577002DB616 /* ContinueWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BA1DCA28F08577002DB616 /* ContinueWithGoogle.swift */; };
+		78BA1DCE28F0AAA7002DB616 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BA1DCD28F0AAA7002DB616 /* Constants.swift */; };
 		78CC889B28EF9C99003DB6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC889A28EF9C99003DB6D0 /* AppDelegate.swift */; };
 		78CC889F28EF9C99003DB6D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC889E28EF9C99003DB6D0 /* ViewController.swift */; };
 		78CC88A428EF9CA3003DB6D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CC88A328EF9CA3003DB6D0 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		401DD8DDC4F239DEEFDB66D9 /* Pods-Fobb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fobb.release.xcconfig"; path = "Target Support Files/Pods-Fobb/Pods-Fobb.release.xcconfig"; sourceTree = "<group>"; };
 		4DDD2752E9A454720FA3E102 /* Pods_FobbTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FobbTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BA1DCA28F08577002DB616 /* ContinueWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueWithGoogle.swift; sourceTree = "<group>"; };
+		78BA1DCD28F0AAA7002DB616 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		78CC889728EF9C99003DB6D0 /* Fobb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fobb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CC889A28EF9C99003DB6D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CC889E28EF9C99003DB6D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				78CC88EF28F05788003DB6D0 /* UIAlertController.swift */,
 				78CC88F128F05830003DB6D0 /* EmailValidator.swift */,
 				78CC88F328F058E4003DB6D0 /* ProgressHUD.swift */,
+				78BA1DCD28F0AAA7002DB616 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78CC88E828EFE800003DB6D0 /* LoginViewController.swift in Sources */,
+				78BA1DCE28F0AAA7002DB616 /* Constants.swift in Sources */,
 				78BA1DCB28F08577002DB616 /* ContinueWithGoogle.swift in Sources */,
 				78CC88E128EFAACD003DB6D0 /* MainTextField.swift in Sources */,
 				78CC889F28EF9C99003DB6D0 /* ViewController.swift in Sources */,
