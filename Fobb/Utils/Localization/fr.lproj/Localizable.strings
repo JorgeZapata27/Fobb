@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Fobb
+
+  Created by JJ Zapata on 10/6/22.
+  
+*/
+
+"Hello" = "Hello";
+"Welcome" = "Bienvenido";
+"Your Digital Car Key" = "Tu llave digital\nde coche";
+"Sign In" = "Iniciar sesión";
+"Sign Up" = "Registrarse";
+"What's your name?" = "¿Cómo te llamas?";
+"New to Fobb?" = "¿Nuevo en Fobb?";
+"Get Started" = "Comenzar";
+"Already with us?" = "¿Ya estás con nosotros?";
+

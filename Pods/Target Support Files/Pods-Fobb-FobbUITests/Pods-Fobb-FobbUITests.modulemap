@@ -1,0 +1,6 @@
+framework module Pods_Fobb_FobbUITests {
+  umbrella header "Pods-Fobb-FobbUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

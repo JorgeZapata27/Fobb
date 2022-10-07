@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  Fobb
+
+  Created by JJ Zapata on 10/6/22.
+  
+*/
+
+"Hello" = "Hola";
+"Welcome" = "Bienvenido";
+"Your Digital Car Key" = "Tu llave digital\nde coche";
+"Sign In" = "Iniciar sesión";
+"Sign Up" = "Registrarse";
+"What's your name?" = "¿Cómo te llamas?";
+"New to Fobb?" = "¿Nuevo en Fobb?";
+"Get Started" = "Comenzar";
+"Already with us?" = "¿Ya estás con nosotros?";
+"Login with " = "Iniciar sesión con ";
+"Continue with " = "Continuar con ";
+"Email" = "Email";
+"Password" = "Contraseña";
+"Login" = "Iniciar sesión";
+"Error" = "Error";
+"Both text fields must be filled out" = "Ambos campos de texto deben completarse";
+"Invalid Email" = "Correo electrónico no válido";
+"Your email is invalid, please make sure it is formatted correctly" = "Su correo electrónico no es válido, asegúrese de que tenga el formato correcto";
+"Your Full Name" = "Su nombre completo";
+"Save Information" = "Guardar información";
+"Text field should be filled in" = "El campo de texto debe ser completado";
